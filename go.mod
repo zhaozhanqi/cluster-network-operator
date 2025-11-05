@@ -12,6 +12,7 @@ require (
 	github.com/go-bindata/go-bindata v3.1.2+incompatible
 	github.com/onsi/gomega v1.37.0
 	github.com/openshift/build-machinery-go v0.0.0-20250602125535-1b6d00b8c37c
+	github.com/openshift/origin v0.0.0-00010101000000-000000000000
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.22.0
 	github.com/spf13/cobra v1.9.1
@@ -27,6 +28,7 @@ require (
 	k8s.io/component-base v0.33.3
 	k8s.io/klog/v2 v2.130.1
 	k8s.io/kube-proxy v0.33.3
+	k8s.io/kubernetes v1.33.3
 	k8s.io/utils v0.0.0-20250604170112-4c0f3b243397
 	sigs.k8s.io/controller-runtime v0.21.0
 )
@@ -106,6 +108,8 @@ require (
 )
 
 require (
+	github.com/onsi/ginkgo/v2 v2.23.4
+	github.com/openshift-eng/openshift-tests-extension v0.0.0-20251105193959-75a0be5d9bd7
 	github.com/openshift/api v0.0.0-20250723204313-9da003a73da3
 	github.com/openshift/client-go v0.0.0-20250710075018-396b36f983ee
 	github.com/openshift/library-go v0.0.0-20250724090956-97237917fcff
@@ -136,6 +140,7 @@ require (
 	github.com/felixge/fgprof v0.9.4 // indirect
 	github.com/fxamacker/cbor/v2 v2.9.0 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
+	github.com/go-task/slim-sprig/v3 v3.0.0 // indirect
 	github.com/gobuffalo/flect v1.0.3 // indirect
 	github.com/google/btree v1.1.3 // indirect
 	github.com/google/cel-go v0.26.0 // indirect
@@ -145,7 +150,6 @@ require (
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/onsi/ginkgo/v2 v2.23.4 // indirect
 	github.com/rogpeppe/go-internal v1.14.1 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.9.2 // indirect
@@ -155,6 +159,7 @@ require (
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.37.0 // indirect
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.37.0 // indirect
+	go.uber.org/automaxprocs v1.6.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.2 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	go4.org v0.0.0-20201209231011-d4a079459e60 // indirect
@@ -171,6 +176,7 @@ require (
 
 // Temporary replace added for compatibility, remove during next package bump.
 replace (
+	github.com/openshift/origin => github.com/openshift/origin v0.0.0-20250107154534-f3d6e3f3b0a4
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc => go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.60.0
 	k8s.io/apimachinery => k8s.io/apimachinery v0.33.3
 	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20250701173324-9bd5c66d9911
